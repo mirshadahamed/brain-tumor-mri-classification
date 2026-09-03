@@ -1,0 +1,68 @@
+{
+  "seed": 42,
+  "requested_ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "source_images": 7200,
+  "retained_images": 6677,
+  "excluded_images": 523,
+  "exclusion_reasons": {
+    "marked_augmented_no_parent_mapping": 203,
+    "duplicate_decoded_pixels": 314,
+    "similar_images_conflicting_labels": 6
+  },
+  "classes": [
+    "glioma",
+    "meningioma",
+    "notumor",
+    "pituitary"
+  ],
+  "class_to_idx": {
+    "glioma": 0,
+    "meningioma": 1,
+    "notumor": 2,
+    "pituitary": 3
+  },
+  "split_counts": {
+    "train": {
+      "glioma": 1244,
+      "meningioma": 1039,
+      "notumor": 1160,
+      "pituitary": 1230
+    },
+    "validation": {
+      "glioma": 267,
+      "meningioma": 223,
+      "notumor": 249,
+      "pituitary": 264
+    },
+    "test": {
+      "glioma": 266,
+      "meningioma": 223,
+      "notumor": 248,
+      "pituitary": 264
+    }
+  },
+  "split_totals": {
+    "train": 4673,
+    "validation": 1003,
+    "test": 1001
+  },
+  "similarity_pairs": 1680,
+  "similarity_groups": 388,
+  "excluded_conflicting_similarity_groups": 2,
+  "largest_similarity_group": 12,
+  "cross_class_similarity_groups": 0,
+  "phash_max_hamming_distance": 4,
+  "gray64_max_rmse": 7.65,
+  "dataset_fingerprint_sha256": "05c99c7f9a588f4441bb567be5330c24bf001a1f27ef55fca9c18d3b96f35e61",
+  "protocol": "Fresh split pooling original Training and Testing; previous official split is not retained.",
+  "limitations": [
+    "No patient IDs: patient-disjoint evaluation cannot be verified.",
+    "Perceptual checks do not detect every transformed, re-encoded, or related image.",
+    "A test image is unseen only if excluded from training, tuning, and model selection; prior use cannot be undone.",
+    "Files marked aug are excluded because augmentation parent mappings are absent."
+  ]
+}

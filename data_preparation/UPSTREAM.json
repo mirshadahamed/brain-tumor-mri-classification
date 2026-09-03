@@ -1,0 +1,5 @@
+{
+  "branch": "ResNet50",
+  "commit": "9abe47aa717d9837ff3874098ae407ee48aa3fe9",
+  "note": "Imported unchanged; CNN reads source_path from local dataset/."
+}

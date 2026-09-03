@@ -5,7 +5,7 @@ import pandas as pd
 import tensorflow as tf
 from PIL import Image
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 IMAGE_SIZE = (224, 224)
 BATCH_SIZE = 32
 SEED = 42
@@ -35,13 +35,13 @@ def prepare_example(path, label):
 
 
 def make_dataset(split, training=False):
-    frame = pd.read_csv(ROOT / "splits" / f"{split}.csv")
+    frame = pd.read_csv(ROOT / "data_preparation" / "manifests" / f"{split}.csv")
 
     paths = [
-        str(ROOT / filepath)
-        for filepath in frame["filepath"]
+        str(ROOT / "dataset" / filepath)
+        for filepath in frame["source_path"]
     ]
-    labels = frame["label"].to_numpy(dtype=np.int32)
+    labels = frame["class_id"].to_numpy(dtype=np.int32)
 
     dataset = tf.data.Dataset.from_tensor_slices((paths, labels))
 
