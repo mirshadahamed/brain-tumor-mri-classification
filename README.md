@@ -8,6 +8,7 @@ been checked for inference; full training and final evaluation are not yet imple
 ```text
 notebooks/                 Dataset inspection, pipeline check, CNN architecture
 src/data_pipeline.py       Shared TensorFlow image loader
+src/model.py               Reusable Custom CNN architecture
 scripts/                   Shared split verification
 data_preparation/         Imported ResNet50 preparation code and documentation
   manifests/               Fixed team split CSVs and cleaning audit
