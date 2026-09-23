@@ -1,7 +1,7 @@
 # Brain Tumor MRI Classification — Custom CNN
 
-Run the notebooks in VS Code with the repository `.venv` kernel. The CNN has
-been checked for inference; full training and final evaluation are not yet implemented.
+Run the notebooks in VS Code with the repository `.venv` kernel. The CNN supports a short training check and full training with validation callbacks.
+Final test evaluation is not yet implemented.
 
 ## Structure
 
@@ -50,3 +50,11 @@ the model and runs only during training. Test data must not guide model selectio
 
 Install the recorded environment dependencies using `pip install -r requirements.txt`.
 The separate preparation requirements are needed only to reproduce the upstream audit.
+
+## Training
+
+In `notebooks/model.ipynb`, run the two-batch check first. Enable
+`RUN_FULL_TRAINING` for up to 50 epochs from fresh weights. Checkpoints go to
+`models/<run>/best.keras`; configurations, CSV/JSON history, timing, and curves
+go to `results/<run>/`. Selection uses validation loss only. Full training can
+be slow on CPU. Smoke-run results are ignored by Git.

@@ -1,0 +1,8 @@
+{
+  "training_seconds": 5505.124513041985,
+  "epochs_completed": 33,
+  "best_epoch": 25,
+  "best_validation_loss": 0.14638248085975647,
+  "checkpoint": "models/cnn_20260928T045158815871Z/best.keras",
+  "checkpoint_reload_passed": true
+}
