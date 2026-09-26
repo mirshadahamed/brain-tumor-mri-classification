@@ -1,7 +1,7 @@
 # Brain Tumor MRI Classification — Custom CNN
 
 Run the notebooks in VS Code with the repository `.venv` kernel. The CNN supports a short training check and full training with validation callbacks.
-Final test evaluation is not yet implemented.
+Final test evaluation is available in `notebooks/evaluation.ipynb`.
 
 ## Structure
 
@@ -58,3 +58,10 @@ In `notebooks/model.ipynb`, run the two-batch check first. Enable
 `models/<run>/best.keras`; configurations, CSV/JSON history, timing, and curves
 go to `results/<run>/`. Selection uses validation loss only. Full training can
 be slow on CPU. Smoke-run results are ignored by Git.
+
+## Final evaluation
+
+Open `notebooks/evaluation.ipynb` to load the saved final test metrics and plots.
+`src/evaluation.py` uses the frozen best checkpoint and unshuffled shared test
+manifest. Outputs are in `results/cnn_20260928T045158815871Z/evaluation/`.
+Completed metrics are reused on reruns; do not tune this model against the test set.

@@ -1,0 +1,19 @@
+{
+  "test_images": 1001,
+  "accuracy": 0.9470529470529471,
+  "cross_entropy": 0.13235826790332794,
+  "macro_precision": 0.9459214634954707,
+  "macro_recall": 0.9458975868158225,
+  "macro_f1": 0.9455932890784219,
+  "macro_roc_auc_ovr": 0.9966812372464089,
+  "checkpoint": "models/cnn_20260928T045158815871Z/best.keras",
+  "checkpoint_sha256": "8b94cedf4256db39ae4f1648099eddab1527584f02060d599fd4c9f2ec5c18a6",
+  "test_manifest_sha256": "9f717d2a7e51e4a9b4e380036a626a910ce79f3004bd9c46bb3052a7dd395adb",
+  "class_to_index": {
+    "glioma": 0,
+    "meningioma": 1,
+    "notumor": 2,
+    "pituitary": 3
+  },
+  "misclassified_images": 53
+}
