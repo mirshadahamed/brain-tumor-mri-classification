@@ -1,0 +1,11 @@
+{
+  "all_copies_sha256_verified": true,
+  "unique_decoded_pixels": true,
+  "no_similarity_group_crosses_splits": true,
+  "counts": {
+    "test": 1001,
+    "train": 4673,
+    "validation": 1003
+  },
+  "total": 6677
+}
