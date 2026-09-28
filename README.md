@@ -65,3 +65,11 @@ Open `notebooks/evaluation.ipynb` to load the saved final test metrics and plots
 `src/evaluation.py` uses the frozen best checkpoint and unshuffled shared test
 manifest. Outputs are in `results/cnn_20260928T045158815871Z/evaluation/`.
 Completed metrics are reused on reruns; do not tune this model against the test set.
+
+## Single-image demo
+
+Open `notebooks/prediction.ipynb` using the `.venv` kernel. Put an MRI image in
+`inputs/`, set `IMAGE_PATH`, and run the cells. Uses the local best checkpoint
+and the same RGB, bilinear 224×224 resize, and normalization as training.
+All four model probabilities are displayed; they are not calibrated clinical
+confidence. Input images are ignored by Git.

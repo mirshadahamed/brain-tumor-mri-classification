@@ -8,3 +8,6 @@ models/*
 !models/.gitkeep
 
 results/smoke_*/
+
+inputs/*
+!inputs/.gitkeep
