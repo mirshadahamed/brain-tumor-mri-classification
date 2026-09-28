@@ -1,0 +1,26 @@
+Item,Value
+Dataset,Brain Tumor MRI
+Total Images,7200
+Training Images,4480
+Validation Images,1120
+Test Images,1600
+Classes,4
+Input Size,224 × 224
+Patch Size,16 × 16
+Model,ViT-B/16
+Total Parameters,"85,801,732"
+Fine-Tuned Parameters,"14,180,356"
+Batch Size,4
+Stage 1 Learning Rate,1e-3
+Stage 2 Learning Rate,1e-5
+Stage 1 Best Validation Accuracy,92.14%
+Stage 1 Best Epoch,5
+Stage 2 Best Validation Accuracy,98.12%
+Stage 2 Best Epoch,10
+Final Test Accuracy,93.50%
+Macro Precision,93.99%
+Macro Recall,93.50%
+Macro F1-score,93.37%
+Macro ROC-AUC,98.49%
+Test Loss,0.6965
+Misclassified Test Images,104
