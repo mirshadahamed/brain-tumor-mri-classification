@@ -1,0 +1,31 @@
+{
+  "smoke_test": false,
+  "seed": 42,
+  "batch_size": 32,
+  "maximum_epochs": 50,
+  "optimizer": "Adam",
+  "initial_learning_rate": 0.001,
+  "loss": "SparseCategoricalCrossentropy",
+  "monitor": "val_loss",
+  "early_stopping_patience": 8,
+  "reduce_lr_patience": 3,
+  "reduce_lr_factor": 0.5,
+  "minimum_learning_rate": 1e-06,
+  "tensorflow": "2.21.0",
+  "python": "3.13.3",
+  "platform": "macOS-15.1-arm64-arm-64bit-Mach-O",
+  "devices": [
+    "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+  ],
+  "class_to_index": {
+    "glioma": 0,
+    "meningioma": 1,
+    "notumor": 2,
+    "pituitary": 3
+  },
+  "manifest_sha256": {
+    "train": "565f229a0745111496dad55cac50983becb652d73bfaef993b654ba9f6007033",
+    "validation": "fb1bbb6890871e348da73c580e5101114d37a4f44a091644d540f8104703ea42"
+  },
+  "model_source_sha256": "8cd1c59f928f65d4ed7ea6e1c2a511c398eefee9ae2d24a3a280b838ebf2d340"
+}
