@@ -1,0 +1,8 @@
+# Install the matching CUDA PyTorch/Torchvision wheels from the official selector
+# before using this file; versions here document the verified experiment pair.
+torch==2.11.0
+torchvision==0.26.0
+numpy>=2.0,<3.0
+Pillow>=11.0,<13.0
+scikit-learn>=1.6,<2.0
+matplotlib>=3.9,<4.0
